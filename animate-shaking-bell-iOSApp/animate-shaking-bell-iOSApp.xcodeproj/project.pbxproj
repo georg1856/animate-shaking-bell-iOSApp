@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4034814528EFFF9700861F54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4034814428EFFF9700861F54 /* AppDelegate.swift */; };
-		4034814728EFFF9700861F54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4034814628EFFF9700861F54 /* SceneDelegate.swift */; };
 		4034814928EFFF9700861F54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4034814828EFFF9700861F54 /* ViewController.swift */; };
-		4034814C28EFFF9700861F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4034814A28EFFF9700861F54 /* Main.storyboard */; };
 		4034814E28EFFF9800861F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4034814D28EFFF9800861F54 /* Assets.xcassets */; };
 		4034815128EFFF9800861F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4034814F28EFFF9800861F54 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		4034814128EFFF9700861F54 /* animate-shaking-bell-iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "animate-shaking-bell-iOSApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4034814428EFFF9700861F54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4034814628EFFF9700861F54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4034814828EFFF9700861F54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4034814B28EFFF9700861F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4034814D28EFFF9800861F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4034815028EFFF9800861F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4034815228EFFF9800861F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				4034814428EFFF9700861F54 /* AppDelegate.swift */,
-				4034814628EFFF9700861F54 /* SceneDelegate.swift */,
 				4034814828EFFF9700861F54 /* ViewController.swift */,
-				4034814A28EFFF9700861F54 /* Main.storyboard */,
 				4034814D28EFFF9800861F54 /* Assets.xcassets */,
 				4034814F28EFFF9800861F54 /* LaunchScreen.storyboard */,
 				4034815228EFFF9800861F54 /* Info.plist */,
@@ -127,7 +121,6 @@
 			files = (
 				4034815128EFFF9800861F54 /* LaunchScreen.storyboard in Resources */,
 				4034814E28EFFF9800861F54 /* Assets.xcassets in Resources */,
-				4034814C28EFFF9700861F54 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,21 +133,12 @@
 			files = (
 				4034814928EFFF9700861F54 /* ViewController.swift in Sources */,
 				4034814528EFFF9700861F54 /* AppDelegate.swift in Sources */,
-				4034814728EFFF9700861F54 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4034814A28EFFF9700861F54 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4034814B28EFFF9700861F54 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4034814F28EFFF9800861F54 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +278,6 @@
 				INFOPLIST_FILE = "animate-shaking-bell-iOSApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +305,6 @@
 				INFOPLIST_FILE = "animate-shaking-bell-iOSApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
