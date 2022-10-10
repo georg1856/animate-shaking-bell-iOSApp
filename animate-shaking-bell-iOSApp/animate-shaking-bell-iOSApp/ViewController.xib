@@ -9,8 +9,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="animate_shaking_bell_iOSApp" customModuleProvider="target">
             <connections>
+                <outlet property="angleSlider" destination="jE8-iS-5FD" id="qjW-j3-qsw"/>
                 <outlet property="bellView" destination="Ylf-Xy-oPv" id="6be-bn-7ht"/>
                 <outlet property="durationSlider" destination="bj4-Nh-qvp" id="hBW-K8-yuq"/>
+                <outlet property="offsetSlider" destination="VTQ-17-dFj" id="oPw-fc-wt6"/>
                 <outlet property="view" destination="iN0-l3-epB" id="xzh-EH-tO6"/>
             </connections>
         </placeholder>
@@ -20,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xsm-uT-B4G">
-                    <rect key="frame" x="143" y="313.5" width="128" height="269.5"/>
+                    <rect key="frame" x="143" y="223" width="128" height="450.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ylf-Xy-oPv" userLabel="Notification Badge View" customClass="NotificationBadgeView" customModule="animate_shaking_bell_iOSApp" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -43,8 +45,32 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jE8-iS-5FD">
+                            <rect key="frame" x="-2" y="238.5" width="132" height="31"/>
+                            <connections>
+                                <action selector="angleChanged:" destination="-1" eventType="valueChanged" id="ypK-gM-Ts1"/>
+                            </connections>
+                        </slider>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Angle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GH5-5g-TsI">
+                            <rect key="frame" x="0.0" y="288.5" width="128" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VTQ-17-dFj">
+                            <rect key="frame" x="-2" y="329" width="132" height="31"/>
+                            <connections>
+                                <action selector="offsetChanged:" destination="-1" eventType="valueChanged" id="HEH-Vl-arm"/>
+                            </connections>
+                        </slider>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offset" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2b-Kc-xdG">
+                            <rect key="frame" x="0.0" y="379" width="128" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5w-zC-O6N">
-                            <rect key="frame" x="0.0" y="238.5" width="128" height="31"/>
+                            <rect key="frame" x="0.0" y="419.5" width="128" height="31"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Reset"/>
                             <connections>
