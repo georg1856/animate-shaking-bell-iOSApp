@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4034814528EFFF9700861F54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4034814428EFFF9700861F54 /* AppDelegate.swift */; };
-		4034814928EFFF9700861F54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4034814828EFFF9700861F54 /* ViewController.swift */; };
 		4034814E28EFFF9800861F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4034814D28EFFF9800861F54 /* Assets.xcassets */; };
 		4034815128EFFF9800861F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4034814F28EFFF9800861F54 /* LaunchScreen.storyboard */; };
+		4034815928F0065D00861F54 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4034815828F0065D00861F54 /* ViewController.xib */; };
+		4034815D28F00BE400861F54 /* NotificationBadgeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4034815C28F00BE400861F54 /* NotificationBadgeView.xib */; };
+		4034815F28F00BF600861F54 /* NotificationBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4034815E28F00BF600861F54 /* NotificationBadgeView.swift */; };
+		4034816128F0162C00861F54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4034814828EFFF9700861F54 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		4034814D28EFFF9800861F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4034815028EFFF9800861F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4034815228EFFF9800861F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4034815828F0065D00861F54 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		4034815C28F00BE400861F54 /* NotificationBadgeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationBadgeView.xib; sourceTree = "<group>"; };
+		4034815E28F00BF600861F54 /* NotificationBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBadgeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +58,24 @@
 		4034814328EFFF9700861F54 /* animate-shaking-bell-iOSApp */ = {
 			isa = PBXGroup;
 			children = (
-				4034814428EFFF9700861F54 /* AppDelegate.swift */,
+				4034816028F0126C00861F54 /* Files */,
 				4034814828EFFF9700861F54 /* ViewController.swift */,
+				4034815828F0065D00861F54 /* ViewController.xib */,
+				4034815E28F00BF600861F54 /* NotificationBadgeView.swift */,
+				4034815C28F00BE400861F54 /* NotificationBadgeView.xib */,
+			);
+			path = "animate-shaking-bell-iOSApp";
+			sourceTree = "<group>";
+		};
+		4034816028F0126C00861F54 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				4034814428EFFF9700861F54 /* AppDelegate.swift */,
 				4034814D28EFFF9800861F54 /* Assets.xcassets */,
 				4034814F28EFFF9800861F54 /* LaunchScreen.storyboard */,
 				4034815228EFFF9800861F54 /* Info.plist */,
 			);
-			path = "animate-shaking-bell-iOSApp";
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +137,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4034815128EFFF9800861F54 /* LaunchScreen.storyboard in Resources */,
+				4034815928F0065D00861F54 /* ViewController.xib in Resources */,
 				4034814E28EFFF9800861F54 /* Assets.xcassets in Resources */,
+				4034815D28F00BE400861F54 /* NotificationBadgeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4034814928EFFF9700861F54 /* ViewController.swift in Sources */,
+				4034816128F0162C00861F54 /* ViewController.swift in Sources */,
+				4034815F28F00BF600861F54 /* NotificationBadgeView.swift in Sources */,
 				4034814528EFFF9700861F54 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
