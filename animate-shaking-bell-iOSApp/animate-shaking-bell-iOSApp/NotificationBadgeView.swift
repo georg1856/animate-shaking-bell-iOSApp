@@ -33,7 +33,6 @@ class NotificationBadgeView: UIView {
         let bundle = Bundle(for: NotificationBadgeView.self)
         bundle.loadNibNamed(String(describing: NotificationBadgeView.self), owner: self, options: nil)
         addSubview(contentView)
-
     }
 
     override var intrinsicContentSize: CGSize {
@@ -44,14 +43,11 @@ class NotificationBadgeView: UIView {
 extension NotificationBadgeView {
     
     private func shakeWith(duration: Double, angle: CGFloat, yOffset: CGFloat) {
-        print("duration: \(duration) angle: \(angle) offset: \(yOffset)")
 
         let numberOfFrames: Double = 6
         let frameDuration = Double(1/numberOfFrames)
 
         imageView.setAnchorPoint(CGPoint(x: 0.5, y: yOffset))
-
-        print("anchorPoint: \(imageView.layer.anchorPoint)")
 
         UIView.animateKeyframes(withDuration: duration, delay: 0, options: [],
           animations: {
