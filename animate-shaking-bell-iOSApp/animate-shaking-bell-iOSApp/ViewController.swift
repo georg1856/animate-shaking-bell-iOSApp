@@ -9,11 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var bellView: NotificationBadgeView!
+    @IBOutlet weak var durationSlider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
-
+    @IBAction func reset(_ sender: Any) {
+        
+    }
 }
-
