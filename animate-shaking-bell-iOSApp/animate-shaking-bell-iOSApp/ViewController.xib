@@ -33,7 +33,7 @@
                         <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="747" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bj4-Nh-qvp">
                             <rect key="frame" x="-2" y="148" width="132" height="31"/>
                             <connections>
-                                <action selector="durationChanged:" destination="-1" eventType="valueChanged" id="Yom-lA-7po"/>
+                                <action selector="durationChanged:" destination="-1" eventType="valueChanged" id="neh-gX-OwM"/>
                             </connections>
                         </slider>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="Duration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iin-aM-f6O">

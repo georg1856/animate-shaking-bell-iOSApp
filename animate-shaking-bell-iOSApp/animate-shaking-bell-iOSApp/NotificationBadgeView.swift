@@ -13,14 +13,17 @@ class NotificationBadgeView: UIView {
     @IBOutlet var contentView: UIView!
     @IBOutlet var imageView: UIImageView!
     
+    //продолжительность
     var duration: Double = 1 {
         didSet { shakeWith(duration: duration, angle: angle, yOffset: yOffset) }
     }
     
+    //угол
     var angle: CGFloat = .pi/8 {
         didSet { shakeWith(duration: duration, angle: angle, yOffset: yOffset) }
     }
 
+    //смещение
     var yOffset: CGFloat = 0.5 {
         didSet { shakeWith(duration: duration, angle: angle, yOffset: yOffset) }
     }
@@ -39,13 +42,17 @@ class NotificationBadgeView: UIView {
 }
 
 extension NotificationBadgeView {
+    
     private func shakeWith(duration: Double, angle: CGFloat, yOffset: CGFloat) {
-        
+        print("duration: \(duration) angle: \(angle) offset: \(yOffset)")
+
         let numberOfFrames: Double = 6
         let frameDuration = Double(1/numberOfFrames)
-        
+
         imageView.setAnchorPoint(CGPoint(x: 0.5, y: yOffset))
-        
+
+        print("anchorPoint: \(imageView.layer.anchorPoint)")
+
         UIView.animateKeyframes(withDuration: duration, delay: 0, options: [],
           animations: {
             UIView.addKeyframe(withRelativeStartTime: 0.0,

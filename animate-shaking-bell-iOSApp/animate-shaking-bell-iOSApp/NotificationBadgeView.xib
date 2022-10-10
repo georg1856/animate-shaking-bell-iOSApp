@@ -10,8 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationBadgeView" customModule="animate_shaking_bell_iOSApp" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="cyA-ay-ior" id="3c1-e8-e33"/>
-                <outlet property="imageVIew" destination="D4A-hg-y6m" id="VSZ-ho-Tnf"/>
-                <outlet property="imageView" destination="D4A-hg-y6m" id="BZM-Ti-8AT"/>
+                <outlet property="imageView" destination="D4A-hg-y6m" id="MFA-Lb-Qv4"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

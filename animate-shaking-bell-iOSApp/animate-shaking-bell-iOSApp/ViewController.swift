@@ -17,7 +17,14 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func reset(_ sender: Any) {
+    @IBAction func durationChanged(_ sender: UISlider) {
         
+        bellView.duration = Double(sender.value)*2
+    }
+    
+    @IBAction func reset(_ sender: Any) {
+        durationSlider.value = 0.5
+        
+        bellView.duration = Double(1)
     }
 }
